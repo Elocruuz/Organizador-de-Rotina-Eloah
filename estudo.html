@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SoftSync - Minha Rotina 3º Ano 🌸</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Canvas 3D de Fundo -->
+  <canvas id="bg-canvas"></canvas>
+
+  <header>
+    <h1>SoftSync 🌸</h1>
+    <p>Minha rotina meiga & consistente no 3º Ano do Ensino Médio ✨</p>
+  </header>
+
+  <main class="grid-container">
+    <!-- Card Estudo -->
+    <div class="card" onclick="openModal('modal-estudo')">
+      <div class="card-icon">📖✨</div>
+      <h2>Estudos & ENEM</h2>
+      <p>Aulas do 3º ano (07h-12h), redação, inglês e revisões focadas.</p>
+      <button class="btn">Ver Detalhes 🌸</button>
+    </div>
+
+    <!-- Card Trabalho -->
+    <div class="card" onclick="openModal('modal-trabalho')">
+      <div class="card-icon">🎀💼</div>
+      <h2>Trabalho</h2>
+      <p>Expediente na escola (12h40 às 17h30) com dedicação e carinho.</p>
+      <button class="btn">Ver Detalhes 🌸</button>
+    </div>
+
+    <!-- Card Lazer -->
+    <div class="card" onclick="openModal('modal-lazer')">
+      <div class="card-icon">🧸🎬</div>
+      <h2>Lazer & Descanso</h2>
+      <p>Séries, filmes meigos, descompressão e fins de semana leves.</p>
+      <button class="btn">Ver Detalhes 🌸</button>
+    </div>
+
+    <!-- Card Hobby -->
+    <div class="card" onclick="openModal('modal-hobby')">
+      <div class="card-icon">🎨🌸</div>
+      <h2>Hobbies & Arte</h2>
+      <p>Momentos criativos para relaxar a mente após a rotina.</p>
+      <button class="btn">Ver Detalhes 🌸</button>
+    </div>
+
+    <!-- Card Esportes -->
+    <div class="card" onclick="openModal('modal-esportes')">
+      <div class="card-icon">🩰👟</div>
+      <h2>Esportes & Treino</h2>
+      <p>Caminhadas e alongamentos leves (17h30 às 18h30 nas seg, ter e sex).</p>
+      <button class="btn">Ver Detalhes 🌸</button>
+    </div>
+
+    <!-- Card Saúde -->
+    <div class="card" onclick="openModal('modal-saude')">
+      <div class="card-icon">🧋🌸</div>
+      <h2>Saúde & Autocuidado</h2>
+      <p>Skincare, 8h de sono, boa alimentação e equilíbrio emocional.</p>
+      <button class="btn">Ver Detalhes 🌸</button>
+    </div>
+  </main>
+
+  <!-- MODAIS -->
+
+  <!-- Modal Estudo -->
+  <div id="modal-estudo" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal-estudo')">&times;</span>
+      <h2>📖 Plano do 3º Ano & Vestibulares</h2>
+      <p><strong>• Seg-Sex (07:00 - 12:00):</strong> Aulas do 3º Ano do Ensino Médio<br>
+         <strong>• Quarta (18:30 - 19:30):</strong> Curso de Inglês 🇬🇧<br>
+         <strong>• Quinta (18:30 - 20:30):</strong> Curso de Redação ✍️<br>
+         <strong>• Seg, Ter e Sex (18:30 - 19:40):</strong> Bloco Focado ENEM (Revisões, Flashcards e Exercícios)</p>
+      <a href="estudo.html" class="modal-link">Acessar Cronograma de Estudos 🌸</a>
+    </div>
+  </div>
+
+  <!-- Modal Trabalho -->
+  <div id="modal-trabalho" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal-trabalho')">&times;</span>
+      <h2>🎀 Trabalho na Escola</h2>
+      <p><strong>• Segunda a Sexta (12:40 - 17:30):</strong> Trabalho presencial na escola.<br>
+         Foco em cumprir as tarefas com eficiência para deixar a noite livre para seus estudos e descanso.</p>
+      <a href="trabalho.html" class="modal-link">Acessar Detalhes do Trabalho 🌸</a>
+    </div>
+  </div>
+
+  <!-- Modal Lazer -->
+  <div id="modal-lazer" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal-lazer')">&times;</span>
+      <h2>🧸 Lazer & Descompressão</h2>
+      <p><strong>• Seg, Ter e Sex:</strong> Noites leves a partir das 20:40 (Filmes, séries e livros).<br>
+         <strong>• Quarta e Quinta:</strong> Relaxar após os cursos noturnos.<br>
+         <strong>• Fins de Semana:</strong> Passeios fofos, encontros e descanso total da mente.</p>
+      <a href="lazer.html" class="modal-link">Acessar Cantinho de Lazer 🌸</a>
+    </div>
+  </div>
+
+  <!-- Modal Hobby -->
+  <div id="modal-hobby" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal-hobby')">&times;</span>
+      <h2>🎨 Hobbies Meigos</h2>
+      <p><strong>• Terça-feira (19:40 - 20:30):</strong> Pintura, journaling ou playlist favorita.<br>
+         <strong>• Sábado à Tarde:</strong> Espaço livre para explorar sua criatividade sem cobranças.</p>
+      <a href="hobby.html" class="modal-link">Acessar Meus Hobbies 🌸</a>
+    </div>
+  </div>
+
+  <!-- Modal Esportes -->
+  <div id="modal-esportes" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal-esportes')">&times;</span>
+      <h2>🩰 Movimento & Bem-Estar</h2>
+      <p><strong>• Seg, Ter e Sex (17:30 - 18:30):</strong> Exercícios suaves, pilates ou caminhada pós-trabalho para descarregar o estresse do dia.<br>
+         <strong>• Fim de Semana:</strong> Alongamentos leves ao ar livre.</p>
+      <a href="esportes.html" class="modal-link">Acessar Plano Esportivo 🌸</a>
+    </div>
+  </div>
+
+  <!-- Modal Saúde -->
+  <div id="modal-saude" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal-saude')">&times;</span>
+      <h2>🧋 Saúde & Autocuidado</h2>
+      <p><strong>• Transição (12:00 - 12:40):</strong> Almoço saudável e pausa entre escola e trabalho.<br>
+         <strong>• Sono da Beleza:</strong> Dormir às 22:30 para garantir 8h de sono renovador.<br>
+         <strong>• Hidratação:</strong> Garrafinha fofa de água sempre por perto no 3º ano!</p>
+      <a href="saude.html" class="modal-link">Acessar Dicas de Autocuidado 🌸</a>
+    </div>
+  </div>
+
+  <!-- Three.js Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  
+  <script>
+    // --- LÓGICA DOS MODAIS ---
+    function openModal(id) {
+      document.getElementById(id).style.display = "flex";
+    }
+
+    function closeModal(id) {
+      document.getElementById(id).style.display = "none";
+    }
+
+    window.onclick = function(event) {
+      const modals = document.querySelectorAll('.modal');
+      modals.forEach(modal => {
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      });
+    };
+
+    // --- ANIMAÇÃO 3D EM BACKGROUND (THREE.JS ROSA BEBÊ) ---
+    const canvas = document.getElementById('bg-canvas');
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer({ canvas: canvas, alpha: true, antialias: true });
+
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setPixelRatio(window.devicePixelRatio);
+
+    // Objetos 3D Suaves e Delicados
+    const shapes = [];
+    const geometries = [
+      new THREE.SphereGeometry(0.7, 32, 32),
+      new THREE.TorusGeometry(0.7, 0.25, 16, 50),
+      new THREE.IcosahedronGeometry(0.8)
+    ];
+
+    // Material Rosa Bebê com Brilho Suave
+    const material = new THREE.MeshStandardMaterial({
+      color: 0xffd1dc,
+      wireframe: true,
+      roughness: 0.2,
+      metalness: 0.3
+    });
+
+    for (let i = 0; i < 22; i++) {
+      const randomGeom = geometries[Math.floor(Math.random() * geometries.length)];
+      const mesh = new THREE.Mesh(randomGeom, material);
+      
+      mesh.position.x = (Math.random() - 0.5) * 28;
+      mesh.position.y = (Math.random() - 0.5) * 28;
+      mesh.position.z = (Math.random() - 0.5) * 28;
+
+      mesh.rotation.x = Math.random() * Math.PI;
+      mesh.rotation.y = Math.random() * Math.PI;
+
+      shapes.push({
+        mesh: mesh,
+        rotSpeedX: (Math.random() - 0.5) * 0.012,
+        rotSpeedY: (Math.random() - 0.5) * 0.012
+      });
+
+      scene.add(mesh);
+    }
+
+    // Luzes em degradê rosa e pêssego
+    const pointLight1 = new THREE.PointLight(0xffb7c5, 2);
+    pointLight1.position.set(10, 10, 10);
+    scene.add(pointLight1);
+
+    const pointLight2 = new THREE.PointLight(0xf8b195, 1.5);
+    pointLight2.position.set(-10, -10, -10);
+    scene.add(pointLight2);
+
+    const ambientLight = new THREE.AmbientLight(0xffe4e1, 1);
+    scene.add(ambientLight);
+
+    camera.position.z = 14;
+
+    function animate() {
+      requestAnimationFrame(animate);
+
+      shapes.forEach(item => {
+        item.mesh.rotation.x += item.rotSpeedX;
+        item.mesh.rotation.y += item.rotSpeedY;
+      });
+
+      renderer.render(scene, camera);
+    }
+
+    animate();
+
+    window.addEventListener('resize', () => {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    });
+  </script>
+</body>
+</html>
